@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>15th</title>
+  </head>
+  <body>
+    <button onclick="submit()">Submit</button>
+    <script src="./js/ajax.js"></script>
+
+    <script>
+      let obj = { name: "John Doe", email: "johndoe@example.com" };
+
+      async function submit() {
+        let res = await axios.post("https://api.example.com/submit", obj);
+        if (res.status == 200) {
+          alert("Submit sussesfull");
+          window.location.href = "index.html";
+        } else {
+          console.log("error");
+        }
+      }
+    </script>
+  </body>
+</html>

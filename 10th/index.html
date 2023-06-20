@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10th</title>
+
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="highlightButton">Add</button>
+    <p id="myParagraph">This is paragraph</p>
+
+    <script>
+      document
+        .getElementById("highlightButton")
+        .addEventListener("click", () => {
+          const paragraph = document.getElementById("myParagraph");
+          paragraph.classList.add("highlight");
+        });
+    </script>
+  </body>
+</html>

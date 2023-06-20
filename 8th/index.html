@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8th</title>
+  </head>
+  <body>
+    <button onclick="changeContent()">Click me change Element</button>
+    <p id="myParagraph">This is paragraph</p>
+
+    <script>
+      function changeContent() {
+        const myParagraph = document.getElementById("myParagraph");
+        myParagraph.textContent = "I am change Element";
+      }
+    </script>
+  </body>
+</html>

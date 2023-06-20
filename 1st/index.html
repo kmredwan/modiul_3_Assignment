@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1st</title>
+  </head>
+  <body>
+    <script>
+      // 1.Date Object:
+      // a
+
+      function getDayOfWeek(d) {
+        const date = new Date(d);
+        const daysOfWeek = [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+        ];
+        const dayIndex = date.getDay();
+        const dayOfWeek = daysOfWeek[dayIndex];
+        return dayOfWeek;
+      }
+
+      const date = "2023-06-20";
+      const dayOfWeek = getDayOfWeek(date);
+      document.write(`Get Day Of Week : ${dayOfWeek}`);
+
+      // b;
+      // Implement the function :  new Date() returns a date object with the current date and time.
+      // daysOfWeek return week day
+      // dayIndex  return get day . get day mean get weekday as as number (0-6)
+      // day of week return the specific day
+    </script>
+  </body>
+</html>

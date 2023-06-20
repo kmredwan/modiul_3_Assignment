@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13th</title>
+  </head>
+  <body>
+    <p class="myParagraph">My Paragraph 1</p>
+    <p class="myParagraph">My Paragraph 2</p>
+    <p class="myParagraph">My Paragraph 3</p>
+    <p class="myParagraph">My Paragraph 4</p>
+    <p class="myParagraph">My Paragraph 5</p>
+    <p id="myID">My Paragraph 6</p>
+
+    <button onclick="changeColor()">change Color</button>
+
+    <script>
+      function changeColor() {
+        const Paragraphs = document.getElementsByClassName("myParagraph");
+        for (let i = 0; i < Paragraphs.length; i++) {
+          Paragraphs[i].style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>

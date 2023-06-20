@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6th</title>
+  </head>
+  <body>
+    <script>
+      // 6.Geolocation:
+      //a
+
+      function getCurrentLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              const latitude = position.coords.latitude;
+              const longitude = position.coords.latitude;
+              console.log(latitude);
+              console.log(longitude);
+            },
+            (error) => console.log("error")
+          );
+        } else {
+          console.log("Location not found");
+        }
+      }
+
+      getCurrentLocation();
+    </script>
+  </body>
+</html>
